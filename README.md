@@ -24,9 +24,9 @@ This would receive the messages, and hand them off to whatever service needs to 
 
 I see a couple different types of commands.
 
-Global commands - These are available everywhere, and get handled first
-Room specific commands - These commands only work in specific rooms
-Custom commands - These are the majority of commands that are typically handled by scripts.
+1. Global commands - These are available everywhere, and get handled first
+2. Room specific commands - These commands only work in specific rooms
+3. Custom commands - These are the majority of commands that are typically handled by scripts.
 
 
 So the dispatcher would first check to see if the command is a global command (idk maybe ``botso shutdown`` or ``botso restart``)
