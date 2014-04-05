@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using Hipchat.Models;
 using ServiceStack;
+using ServiceStack.Configuration;
+using ServiceStack.Redis;
 using ServiceStack.Text;
 
 namespace HipchatRedisRelay
@@ -17,13 +19,17 @@ namespace HipchatRedisRelay
             try
             {
                 hipchatMessage = roomMessage.ToHipchatMessage();
-                File.WriteAllText(HttpContext.Current.Server.MapPath("messages.log"), roomMessage.Dump());
             }
             catch (Exception x)
             {
                 File.WriteAllText(HttpContext.Current.Server.MapPath("errors.log"), x.ToString());
             }
-            return "This is the message we got : " + hipchatMessage.ToJson();
+
+            using (var redisPublisher = new RedisClient(ConfigUtils.GetAppSetting("redisServer")))
+            {
+                redisPublisher.PublishMessage("HipchatMessage", hipchatMessage.ToJson());
+            }
+            return hipchatMessage.ToJson();
         }
 
     }
