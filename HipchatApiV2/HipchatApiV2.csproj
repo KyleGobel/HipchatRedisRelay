@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F31210A7-1012-4040-ACA7-4243C1160369}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{6D736BBA-0F24-4219-8683-2FDF196B7D51}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TurnWebHookOn</RootNamespace>
-    <AssemblyName>TurnWebHookOn</AssemblyName>
+    <RootNamespace>HipchatApiV2</RootNamespace>
+    <AssemblyName>HipchatApiV2</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -56,21 +54,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="HipchatClient.cs" />
+    <Compile Include="HipchatApiConfig.cs" />
+    <Compile Include="HipchatEndpoints.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Hipchat.Models\Hipchat.Models.csproj">
       <Project>{7F5EDA96-C15B-4E1D-8EB8-64AF0F872FBF}</Project>
       <Name>Hipchat.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HipchatApiV2\HipchatApiV2.csproj">
-      <Project>{6d736bba-0f24-4219-8683-2fdf196b7d51}</Project>
-      <Name>HipchatApiV2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
