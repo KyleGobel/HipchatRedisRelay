@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HipchatRedisRelay", "HipchatRedisRelay\HipchatRedisRelay.csproj", "{DA4AAEBD-3D2F-4FC9-AC8F-D5FFC6B1B6ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurnWebHookOn", "TurnWebHookOn\TurnWebHookOn.csproj", "{F31210A7-1012-4040-ACA7-4243C1160369}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hipchat.Models", "Hipchat.Models\Hipchat.Models.csproj", "{7F5EDA96-C15B-4E1D-8EB8-64AF0F872FBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA4AAEBD-3D2F-4FC9-AC8F-D5FFC6B1B6ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4AAEBD-3D2F-4FC9-AC8F-D5FFC6B1B6ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4AAEBD-3D2F-4FC9-AC8F-D5FFC6B1B6ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4AAEBD-3D2F-4FC9-AC8F-D5FFC6B1B6ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F31210A7-1012-4040-ACA7-4243C1160369}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F31210A7-1012-4040-ACA7-4243C1160369}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F31210A7-1012-4040-ACA7-4243C1160369}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F31210A7-1012-4040-ACA7-4243C1160369}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F5EDA96-C15B-4E1D-8EB8-64AF0F872FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F5EDA96-C15B-4E1D-8EB8-64AF0F872FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F5EDA96-C15B-4E1D-8EB8-64AF0F872FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F5EDA96-C15B-4E1D-8EB8-64AF0F872FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
