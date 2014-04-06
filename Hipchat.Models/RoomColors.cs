@@ -5,6 +5,7 @@
         Yellow,
         Green,
         Purple,
-        Gray
+        Gray,
+        Red
     }
 }

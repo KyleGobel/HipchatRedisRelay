@@ -40,10 +40,10 @@ namespace Botso
         /// <param name="message">The message that was sent via hipchat</param>
         private void HandleMessage(HipchatMessage message)
         {
-            var command = Parser.GetCommandFromMessage(message);
+            var command = CommandParser.GetCommandFromMessage(message);
 
             if (command != null)
-                Dispatcher.DispatchCommand(command);
+                Dispatcher.DispatchCommands(command, message);
         }
     }
 }
