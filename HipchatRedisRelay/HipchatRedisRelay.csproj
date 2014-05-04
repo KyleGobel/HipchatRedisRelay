@@ -40,6 +40,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HipchatApiV2, Version=0.0.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Hipchat-CS.0.0.25\lib\HipchatApiV2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="ServiceStack">
       <HintPath>..\packages\ServiceStack.4.0.15\lib\net40\ServiceStack.dll</HintPath>

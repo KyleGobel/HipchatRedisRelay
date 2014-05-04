@@ -37,6 +37,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HipchatApiV2, Version=0.0.25.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Hipchat-CS.0.0.25\lib\HipchatApiV2.dll</HintPath>
+    </Reference>
     <Reference Include="Jint">
       <HintPath>..\packages\Jint.2.1.0.0\lib\portable-net40+sl50+wp80+win\Jint.dll</HintPath>
     </Reference>
@@ -87,10 +91,6 @@
     <ProjectReference Include="..\Hipchat.Models\Hipchat.Models.csproj">
       <Project>{7F5EDA96-C15B-4E1D-8EB8-64AF0F872FBF}</Project>
       <Name>Hipchat.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HipchatApiV2\HipchatApiV2.csproj">
-      <Project>{6D736BBA-0F24-4219-8683-2FDF196B7D51}</Project>
-      <Name>HipchatApiV2</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
