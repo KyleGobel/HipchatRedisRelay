@@ -23,7 +23,7 @@ namespace TurnWebHookOn
             const string postToUrl = "http://kylegobel.com/hipchatRedisRelay/message";
 
             var client = new HipchatClient();
-            client.CreateWebHook(roomId, postToUrl, "", RoomEvent.Message,"Botso send message hook");
+            client.CreateWebHook(roomId, postToUrl, "", HipchatApiV2.Enums.RoomEvent.RoomNotification, "Botso send message hook");
 
             Console.ReadLine();
         }

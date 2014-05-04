@@ -10,7 +10,7 @@ namespace Botso
             var hipchatClient = new HipchatClient();
 
             errorMessage = "<b>Malfunction!</b><br/>" + errorMessage;
-            hipchatClient.SendMessage(roomId, errorMessage, RoomColors.Red);
+            hipchatClient.SendNotification(roomId, errorMessage, HipchatApiV2.Enums.RoomColors.Red);
         }
     }
 }
